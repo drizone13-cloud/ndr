@@ -1,60 +1,77 @@
 <!DOCTYPE html>
-   <html>
-   <head>
-       <title>NDR - Learn</title>
-       <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-       <nav class="navbar">
-           <div class="logo">
-               <a href="index.html">
-                   <img src="logo.png" alt="Logo Andriyano">
-               </a>
-           </div>
-           <div class="menu">
-       <a href="index.html">Home</a>
-       <a href="blog.html">Blog</a>
-       <a href="about.html">About</a>
-       <a href="learn.html">Learn</a>
-       <a href="contact.html">Contact</a>
-   </div>
-       </nav>
-
-       <section class="page">
-           <h1>Yuk Belajar Web Development!</h1>
-           <p>Ini halaman buat lo belajar.</p>
-<button onclick="resetKartu()" class="tombol-reset">Reset Kartu</button>
-
-   <div class="card-container">
-       ...
-   </div>
-           <div class="card-container">
-       <div class="card" id="card1">
-           <h3>HTML</h3>
-           <p>Bahasa dasar buat bikin website.</p>
-           <button onclick="hapusKartu('card1')">Hapus</button>
-       </div>
-       <div class="card" id="card2">
-           <h3>CSS</h3>
-           <p>Bikin website jadi cakep dan rapi.</p>
-           <button onclick="hapusKartu('card2')">Hapus</button>
-       </div>
-       <div class="card" id="card3">
-           <h3>JavaScript</h3>
-           <p>Bikin website jadi interaktif.</p>
-           <button onclick="hapusKartu('card3')">Hapus</button>
-       </div>
-   </div>
-       </section>
-
-       <footer class="footer">
-           <p>&copy; 2026 <img src="logo.png" alt="Logo" style="height: 20px; vertical-align: middle;"> All rights reserved.</p>
-           <div class="social">
-               <a href="#">Instagram</a>
-               <a href="#">Twitter</a>
-               <a href="#">GitHub</a>
-           </div>
-       </footer>
-       <script src="script.js"></script>
-   </body>
-   </html>
+<html>
+<head>
+    <title>NDR - Learn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Andriyano">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="learn.html" class="active">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <section class="page">
+        <h1>Yuk Belajar Web Development!</h1>
+        <p>Pilih materi yang mau lo pelajari:</p>
+        
+        <button onclick="resetKartu()" class="tombol-reset">Reset Kartu</button>
+        
+        <div class="card-container">
+            <div class="card" id="card1">
+                <h3>HTML</h3>
+                <p>Bahasa dasar buat bikin website.</p>
+                <ul style="text-align: left; color: #ccc; font-size: 14px;">
+                    <li>Struktur halaman</li>
+                    <li>Tag-tag penting</li>
+                    <li>Form dan input</li>
+                    <li>Link dan gambar</li>
+                </ul>
+                <button onclick="hapusKartu('card1')">Hapus</button>
+            </div>
+            <div class="card" id="card2">
+                <h3>CSS</h3>
+                <p>Bikin website jadi cakep dan rapi.</p>
+                <ul style="text-align: left; color: #ccc; font-size: 14px;">
+                    <li>Warna dan background</li>
+                    <li>Layout dengan Flexbox</li>
+                    <li>Animasi dan transisi</li>
+                    <li>Responsive design</li>
+                </ul>
+                <button onclick="hapusKartu('card2')">Hapus</button>
+            </div>
+            <div class="card" id="card3">
+                <h3>JavaScript</h3>
+                <p>Bikin website jadi interaktif.</p>
+                <ul style="text-align: left; color: #ccc; font-size: 14px;">
+                    <li>Manipulasi elemen</li>
+                    <li>Event handling</li>
+                    <li>Validasi form</li>
+                    <li>Local Storage</li>
+                </ul>
+                <button onclick="hapusKartu('card3')">Hapus</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2026 <img src="logo.png" alt="Logo" style="height: 20px; vertical-align: middle;"> All rights reserved.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
