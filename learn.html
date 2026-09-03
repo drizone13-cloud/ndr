@@ -23,21 +23,28 @@
        <section class="page">
            <h1>Yuk Belajar Web Development!</h1>
            <p>Ini halaman buat lo belajar.</p>
+<button onclick="resetKartu()" class="tombol-reset">Reset Kartu</button>
 
+   <div class="card-container">
+       ...
+   </div>
            <div class="card-container">
-               <div class="card">
-                   <h3>HTML</h3>
-                   <p>Bahasa dasar buat bikin website.</p>
-               </div>
-               <div class="card">
-                   <h3>CSS</h3>
-                   <p>Bikin website jadi cakep dan rapi.</p>
-               </div>
-               <div class="card">
-                   <h3>JavaScript</h3>
-                   <p>Bikin website jadi interaktif.</p>
-               </div>
-           </div>
+       <div class="card" id="card1">
+           <h3>HTML</h3>
+           <p>Bahasa dasar buat bikin website.</p>
+           <button onclick="hapusKartu('card1')">Hapus</button>
+       </div>
+       <div class="card" id="card2">
+           <h3>CSS</h3>
+           <p>Bikin website jadi cakep dan rapi.</p>
+           <button onclick="hapusKartu('card2')">Hapus</button>
+       </div>
+       <div class="card" id="card3">
+           <h3>JavaScript</h3>
+           <p>Bikin website jadi interaktif.</p>
+           <button onclick="hapusKartu('card3')">Hapus</button>
+       </div>
+   </div>
        </section>
 
        <footer class="footer">
@@ -48,5 +55,6 @@
                <a href="#">GitHub</a>
            </div>
        </footer>
+       <script src="script.js"></script>
    </body>
    </html>

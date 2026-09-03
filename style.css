@@ -389,3 +389,63 @@ body {
    .tombol-link {
        animation: pulse 2s infinite;
    }
+   /* Style untuk tombol hapus di card */
+   .card button {
+       background-color: #e94560;
+       color: white;
+       border: none;
+       padding: 8px 15px;
+       font-size: 14px;
+       border-radius: 5px;
+       cursor: pointer;
+       margin-top: 10px;
+       transition: all 0.3s ease;
+   }
+
+   .card button:hover {
+       background-color: #ff6b6b;
+   }
+   .tombol-reset {
+       background-color: #00d9ff;
+       color: #1a1a2e;
+       border: none;
+       padding: 10px 20px;
+       font-size: 16px;
+       border-radius: 8px;
+       cursor: pointer;
+       margin-bottom: 20px;
+       transition: all 0.3s ease;
+   }
+
+   .tombol-reset:hover {
+       background-color: #33e1ff;
+   }
+   /* Style untuk input nama di home */
+   #inputNama {
+       padding: 10px;
+       font-size: 16px;
+       border: none;
+       border-radius: 8px;
+       background-color: #16213e;
+       color: white;
+       width: 200px;
+   }
+   .btn-hapus {
+       background-color: #888 !important;
+       color: white !important;
+       border: none;
+       padding: 10px 20px;
+       font-size: 16px;
+       border-radius: 8px;
+       cursor: pointer;
+       margin-left: 10px;
+       transition: all 0.3s ease;
+   }
+
+   .btn-hapus:hover {
+       background-color: #e94560 !important;
+   }
+
+   .btn-hapus:hover {
+       background-color: #e94560;
+   }
