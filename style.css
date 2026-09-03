@@ -315,3 +315,77 @@ body {
        color: #e94560;
        font-weight: bold;
    }
+   /* Transisi untuk tombol */
+   .tombol-link,
+   .form-kontak button,
+   .kiri button {
+       transition: all 0.3s ease;
+   }
+
+   /* Transisi untuk menu */
+   .menu a {
+       transition: color 0.3s ease;
+   }
+
+   /* Transisi untuk card */
+   .card,
+   .blog-card {
+       transition: all 0.3s ease;
+   }
+
+   /* Transisi untuk sosial media link */
+   .footer .social a {
+       transition: color 0.3s ease;
+   }
+   /* Definisi animasi fade-in */
+   @keyframes fadeIn {
+       from {
+           opacity: 0;
+           transform: translateY(20px);
+       }
+       to {
+           opacity: 1;
+           transform: translateY(0);
+       }
+   }
+
+   /* Terapkan animasi ke elemen */
+   .page,
+   .hero,
+   .artikel,
+   .blog-container,
+   .card-container {
+       animation: fadeIn 0.6s ease;
+   }
+   /* Animasi hover untuk card */
+   .card:hover {
+       transform: translateY(-10px);
+       box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+   }
+
+   /* Animasi hover untuk blog card */
+   .blog-card:hover {
+       transform: translateY(-5px);
+       box-shadow: 0 10px 30px rgba(233, 69, 96, 0.3);
+   }
+
+   /* Animasi hover untuk navbar logo */
+   .logo img:hover {
+       transform: scale(1.1);
+   }
+   /* Animasi pulse untuk tombol utama */
+   @keyframes pulse {
+       0% {
+           box-shadow: 0 0 0 0 rgba(233, 69, 96, 0.7);
+       }
+       70% {
+           box-shadow: 0 0 0 15px rgba(233, 69, 96, 0);
+       }
+       100% {
+           box-shadow: 0 0 0 0 rgba(233, 69, 96, 0);
+       }
+   }
+
+   .tombol-link {
+       animation: pulse 2s infinite;
+   }
