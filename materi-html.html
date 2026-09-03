@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NDR - Materi HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Andriyano">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="learn.html" class="active">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <article class="artikel">
+        <h1>Materi: HTML</h1>
+        <p class="meta">Level: Pemula</p>
+        
+        <h2>Apa itu HTML?</h2>
+        <p>HTML (HyperText Markup Language) adalah bahasa dasar buat bikin website. HTML bukan bahasa pemrograman, tapi bahasa markup yang dipakai buat menyusun struktur halaman web.</p>
+        
+        <h2>Struktur Dasar HTML</h2>
+        <p>Setiap halaman HTML punya struktur dasar seperti ini:</p>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Isi konten di sini --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        
+        <h2>Tag-tag Penting</h2>
+        <ul>
+            <li><code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code> - Judul</li>
+            <li><code>&lt;p&gt;</code> - Paragraf</li>
+            <li><code>&lt;a&gt;</code> - Link</li>
+            <li><code>&lt;img&gt;</code> - Gambar</li>
+            <li><code>&lt;div&gt;</code> - Container</li>
+            <li><code>&lt;span&gt;</code> - Inline container</li>
+        </ul>
+        
+        <h2>Contoh Praktis</h2>
+        <p>Bikin halaman sederhana dengan judul, paragraf, dan link:</p>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+&lt;h1&gt;Selamat Datang!&lt;/h1&gt;
+&lt;p&gt;Ini website pertama gue.&lt;/p&gt;
+&lt;a href="about.html"&gt;Tentang Gue&lt;/a&gt;
+        </pre>
+        
+        <h2>Tips Belajar HTML</h2>
+        <ul>
+            <li>Mulai dari yang simpel dulu</li>
+            <li>Praktek langsung, jangan cuma baca</li>
+            <li>Pahami struktur sebelum lanjut ke styling</li>
+            <li>Gunakan inspect element buat belajar dari website lain</li>
+        </ul>
+        
+        <p class="penutup"><a href="learn.html">← Kembali ke Learn</a></p>
+    </article>
+    
+    <footer class="footer">
+        <p>&copy; 2026 <img src="logo.png" alt="Logo" style="height: 20px; vertical-align: middle;"> All rights reserved.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>

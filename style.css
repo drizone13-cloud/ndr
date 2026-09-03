@@ -449,3 +449,12 @@ body {
    .btn-hapus:hover {
        background-color: #e94560;
    }
+   
+   /* Link card */
+   .card-link {
+       text-decoration: none;
+   }
+   
+   .card-link .card {
+       cursor: pointer;
+   }

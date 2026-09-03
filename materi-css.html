@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NDR - Materi CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Andriyano">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="learn.html" class="active">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <article class="artikel">
+        <h1>Materi: CSS</h1>
+        <p class="meta">Level: Pemula</p>
+        
+        <h2>Apa itu CSS?</h2>
+        <p>CSS (Cascading Style Sheets) adalah bahasa yang dipakai buat mendesain tampilan website. Kalau HTML itu struktur, CSS adalah makeup-nya!</p>
+        
+        <h2>Cara Pakai CSS</h2>
+        <p>Ada 3 cara pakai CSS:</p>
+        <ul>
+            <li><strong>Inline</strong> - Langsung di tag HTML: <code>style="color: red;"</code></li>
+            <li><strong>Internal</strong> - Di dalam tag <code>&lt;style&gt;</code> di HTML</li>
+            <li><strong>External</strong> - File terpisah dengan ekstensi .css (RECOMMENDED!)</li>
+        </ul>
+        
+        <h2>Contoh CSS</h2>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+/* Bikin background gelap */
+body {
+    background-color: #1a1a2e;
+    color: white;
+}
+
+/* Bikin judul merah */
+h1 {
+    color: #e94560;
+}
+
+/* Tombol dengan hover */
+button {
+    background-color: #e94560;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #ff6b6b;
+}
+        </pre>
+        
+        <h2>Flexbox</h2>
+        <p>Flexbox adalah cara modern buat layout. Sangat powerful!</p>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+        </pre>
+        
+        <h2>Tips Belajar CSS</h2>
+        <ul>
+            <li>Uji berbagai warna di <a href="https://colorhunt.co" target="_blank">ColorHunt</a></li>
+            <li>Pahami box model (margin, padding, border)</li>
+            <li>Kuasai Flexbox sebelum Grid</li>
+            <li>Praktek desain dari website yang lo suka</li>
+        </ul>
+        
+        <p class="penutup"><a href="learn.html">← Kembali ke Learn</a></p>
+    </article>
+    
+    <footer class="footer">
+        <p>&copy; 2026 <img src="logo.png" alt="Logo" style="height: 20px; vertical-align: middle;"> All rights reserved.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>

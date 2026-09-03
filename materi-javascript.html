@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NDR - Materi JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo Andriyano">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="learn.html" class="active">Learn</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <article class="artikel">
+        <h1>Materi: JavaScript</h1>
+        <p class="meta">Level: Pemula</p>
+        
+        <h2>Apa itu JavaScript?</h2>
+        <p>JavaScript adalah bahasa pemrograman yang bikin website jadi interaktif. Dengan JavaScript, lo bisa:</p>
+        <ul>
+            <li>Bikin tombol yang bisa diklik</li>
+            <li>Validasi form</li>
+            <li>Manipulasi elemen HTML</li>
+            <li>Simpan data di browser</li>
+        </ul>
+        
+        <h2>Cara Pakai JavaScript</h2>
+        <p>Ada 2 cara pakai JavaScript:</p>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+// Inline - Langsung di HTML
+&lt;button onclick="alert('Halo!')"&gt;Klik&lt;/button&gt;
+
+// External - File terpisah .js (RECOMMENDED!)
+&lt;script src="script.js"&gt;&lt;/script&gt;
+        </pre>
+        
+        <h2>Contoh JavaScript</h2>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+// Ambil elemen
+var tombol = document.getElementById("tombolSaya");
+
+// Tambah event
+tombol.addEventListener("click", function() {
+    alert("Tombol diklik!");
+});
+
+// Manipulasi elemen
+var judul = document.getElementById("judul");
+judul.innerText = "Judul Baru";
+judul.style.color = "red";
+        </pre>
+        
+        <h2>Local Storage</h2>
+        <p>Simpan data di browser yang tetap ada walau browser ditutup:</p>
+        <pre style="background-color: #16213e; padding: 15px; border-radius: 8px; color: #00d9ff; overflow-x: auto;">
+// Simpan data
+localStorage.setItem("nama", "Andriyano");
+
+// Ambil data
+var nama = localStorage.getItem("nama");
+
+// Hapus data
+localStorage.removeItem("nama");
+        </pre>
+        
+        <h2>Tips Belajar JavaScript</h2>
+        <ul>
+            <li>Pahami variabel, function, dan event dulu</li>
+            <li>Praktek bikin fitur kecil</li>
+            <li>Gunakan console.log() buat debug</li>
+            <li>Jangan takut error — itu bagian dari belajar!</li>
+        </ul>
+        
+        <p class="penutup"><a href="learn.html">← Kembali ke Learn</a></p>
+    </article>
+    
+    <footer class="footer">
+        <p>&copy; 2026 <img src="logo.png" alt="Logo" style="height: 20px; vertical-align: middle;"> All rights reserved.</p>
+        <div class="social">
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>

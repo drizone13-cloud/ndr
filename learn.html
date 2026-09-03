@@ -24,42 +24,25 @@
         <h1>Yuk Belajar Web Development!</h1>
         <p>Pilih materi yang mau lo pelajari:</p>
         
-        <button onclick="resetKartu()" class="tombol-reset">Reset Kartu</button>
-        
         <div class="card-container">
-            <div class="card" id="card1">
-                <h3>HTML</h3>
-                <p>Bahasa dasar buat bikin website.</p>
-                <ul style="text-align: left; color: #ccc; font-size: 14px;">
-                    <li>Struktur halaman</li>
-                    <li>Tag-tag penting</li>
-                    <li>Form dan input</li>
-                    <li>Link dan gambar</li>
-                </ul>
-                <button onclick="hapusKartu('card1')">Hapus</button>
-            </div>
-            <div class="card" id="card2">
-                <h3>CSS</h3>
-                <p>Bikin website jadi cakep dan rapi.</p>
-                <ul style="text-align: left; color: #ccc; font-size: 14px;">
-                    <li>Warna dan background</li>
-                    <li>Layout dengan Flexbox</li>
-                    <li>Animasi dan transisi</li>
-                    <li>Responsive design</li>
-                </ul>
-                <button onclick="hapusKartu('card2')">Hapus</button>
-            </div>
-            <div class="card" id="card3">
-                <h3>JavaScript</h3>
-                <p>Bikin website jadi interaktif.</p>
-                <ul style="text-align: left; color: #ccc; font-size: 14px;">
-                    <li>Manipulasi elemen</li>
-                    <li>Event handling</li>
-                    <li>Validasi form</li>
-                    <li>Local Storage</li>
-                </ul>
-                <button onclick="hapusKartu('card3')">Hapus</button>
-            </div>
+            <a href="materi-html.html" class="card-link">
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Bahasa dasar buat bikin website.</p>
+                </div>
+            </a>
+            <a href="materi-css.html" class="card-link">
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Bikin website jadi cakep dan rapi.</p>
+                </div>
+            </a>
+            <a href="materi-javascript.html" class="card-link">
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Bikin website jadi interaktif.</p>
+                </div>
+            </a>
         </div>
     </section>
     
@@ -71,7 +54,5 @@
             <a href="#">GitHub</a>
         </div>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
